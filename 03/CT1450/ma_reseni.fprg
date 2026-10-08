@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ma_reseni"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-08 04:01:13 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDg7MDM6NTc6Mjcgb2RwLjsyODAy"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDg7MDQ6MDE6MTMgb2RwLjsxOzI4OTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, D" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="D" expression="b * b - 4 * a * c"/>
+            <if expression="D &gt; 0">
+                <then>
+                    <output expression="&quot;2&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="D == 0">
+                        <then>
+                            <output expression="&quot;1&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;0&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

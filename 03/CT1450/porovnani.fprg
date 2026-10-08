@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="porovnani"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-08 03:39:35 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDg7MDM6MzY6MDMgb2RwLjsyNzkz"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDg7MDM6Mzk6MzUgb2RwLjsxOzI5MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cislo" type="Integer" array="False" size=""/>
+            <input variable="cislo"/>
+            <if expression="cislo &gt;= 0">
+                <then>
+                    <output expression="&quot;kladne&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;zaporne&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

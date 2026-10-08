@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="uhlopricka_ctverce"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-01 03:23:13 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDE7MDM6MTQ6Mzcgb2RwLjsyNzg5"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDE7MDM6MjM6MTMgb2RwLjsxOzI4OTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <declare name="diag" type="Real" array="False" size=""/>
+            <assign variable="diag" expression="a * sqrt(2)"/>
+            <output expression="&quot;Pro &#269;tverec o stran&#283; d&#233;lky &quot; &amp; a &amp; &quot; je d&#233;lka &#250;hlop&#345;&#237;&#269;ky &quot; &amp; ToFixed(diag, 3)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

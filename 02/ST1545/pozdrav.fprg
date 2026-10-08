@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="pozdrav"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-30 04:47:07 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMDktMzA7MDQ6NDU6MTggb2RwLjsyODAz"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMDktMzA7MDQ6NDc6MDcgb2RwLjsxOzI5MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <output expression="&quot;Ahoj, jak se jmenujes?&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Aha! &quot; &amp; name &amp; &quot;! Tak Te tady vitam.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

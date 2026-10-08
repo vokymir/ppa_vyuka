@@ -1,0 +1,14 @@
+Function Main
+    Declare Real posA
+    Declare Real posB
+    Declare Real length
+    Declare Real rot
+    Declare Real rad
+
+    Input posA
+    Input posB
+    Input length
+    Input rot
+    Assign rad = rot*(3.14159265359/180)
+    Output "polygon((" & ToFixed((posA),2) & "," & ToFixed((posB),2) & "),(" & ToFixed((posA + length*Cos(rad)),2) & "," & ToFixed((posB + length*Sin(rad)),2) & "),(" & ToFixed((posA + length*(Cos(rad)-Sin(rad))),2) & "," & ToFixed((posB + length*(Sin(rad)+Cos(rad))),2) & "),(" & ToFixed((posA-length*Sin(rad)),2) & "," & ToFixed((posB + length*Cos(rad)),2) & "))"
+End

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="rozdej_sekundy"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-01 04:05:07 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDE7MDM6NTg6Mjggb2RwLjsyNzk3"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDE7MDQ6MDU6MDcgb2RwLjsxOzI4OTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sec, min" type="Integer" array="False" size=""/>
+            <input variable="sec"/>
+            <assign variable="min" expression="sec / 60"/>
+            <assign variable="sec" expression="sec % 60"/>
+            <output expression="&quot;To je celkem &quot; &amp; min &amp; &quot; minut a &quot; &amp; sec &amp; &quot; sekund.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

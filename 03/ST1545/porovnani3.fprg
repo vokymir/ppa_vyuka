@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="porovnani3"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-07 04:53:16 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDc7MDQ6NDg6MzEgb2RwLjsyNzk3"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDc7MDQ6NTM6MTYgb2RwLjsxOzI5MDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, max" type="Integer" array="False" size=""/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <input variable="n3"/>
+            <assign variable="max" expression="n1"/>
+            <if expression="max &gt; n2">
+                <then/>
+                <else>
+                    <assign variable="max" expression="n2"/>
+                </else>
+            </if>
+            <if expression="max &gt; n3">
+                <then/>
+                <else>
+                    <assign variable="max" expression="n3"/>
+                </else>
+            </if>
+            <output expression="max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

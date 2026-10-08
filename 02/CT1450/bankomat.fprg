@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="bankomat"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-01 04:25:03 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDE7MDQ6MDU6MTAgb2RwLjsyNzgx"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDE7MDQ6MjU6MDMgb2RwLjsxOzI4OTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="total, czk1000, czk500, czk200, czk100" type="Integer" array="False" size=""/>
+            <input variable="total"/>
+            <assign variable="czk1000" expression="total / 1000"/>
+            <assign variable="total" expression="total - czk1000 * 1000"/>
+            <assign variable="czk500" expression="total / 500"/>
+            <assign variable="total" expression="total % 500"/>
+            <assign variable="czk200" expression="total / 200"/>
+            <assign variable="total" expression="total % 200"/>
+            <assign variable="czk100" expression="total / 100"/>
+            <assign variable="total" expression="total % 100"/>
+            <output expression="czk1000 &amp; &quot;x 1000&quot;" newline="True"/>
+            <output expression="czk500 &amp; &quot;x 500&quot;" newline="True"/>
+            <output expression="czk200 &amp; &quot;x 200&quot;" newline="True"/>
+            <output expression="czk100 &amp; &quot;x 100&quot;" newline="True"/>
+            <output expression="&quot;zbytek: &quot; &amp; total" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

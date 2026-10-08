@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="porovnani_3_cisel"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-08 03:53:36 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDg7MDM6NDI6Mjkgb2RwLjsyNzk4"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDg7MDM6NTM6MzYgb2RwLjsyOzI5MDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d, max" type="Integer" array="False" size=""/>
+            <declare name="name" type="String" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <input variable="d"/>
+            <assign variable="max" expression="a"/>
+            <assign variable="name" expression="&quot;a&quot;"/>
+            <if expression="b &gt; max">
+                <then>
+                    <assign variable="max" expression="b"/>
+                    <assign variable="name" expression="&quot;b&quot;"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="c &gt; max">
+                <then>
+                    <assign variable="max" expression="c"/>
+                    <assign variable="name" expression="&quot;c&quot;"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="d &gt; max">
+                <then>
+                    <assign variable="max" expression="d"/>
+                    <assign variable="name" expression="&quot;d&quot;"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="name  &amp; &quot; = &quot; &amp; max" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

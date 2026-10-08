@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="cas_na_sekundy"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-30 04:50:35 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMDktMzA7MDQ6NDc6MzQgb2RwLjsyODAz"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMDktMzA7MDQ6NTA6MzUgb2RwLjsxOzI5MDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mins, secs, totalsecs" type="Integer" array="False" size=""/>
+            <output expression="&quot;Zadej minuty:&quot;" newline="True"/>
+            <input variable="mins"/>
+            <output expression="&quot;Zadej sekundy:&quot;" newline="True"/>
+            <input variable="secs"/>
+            <assign variable="totalsecs" expression="mins * 60 + secs"/>
+            <output expression="&quot;To je celkem &quot; &amp; totalsecs &amp; &quot; sekund!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

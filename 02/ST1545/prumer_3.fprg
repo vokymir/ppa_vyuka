@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="prumer_3"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-30 04:45:15 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMDktMzA7MDQ6MjI6MTYgb2RwLjsyNzk2"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMDktMzA7MDQ6NDU6MTUgb2RwLjsyOzI5MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, avg, CONST, width" type="Real" array="False" size=""/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <input variable="n3"/>
+            <assign variable="avg" expression="(n1 + n2 + n3) / 3"/>
+            <home/>
+            <assign variable="CONST" expression="10"/>
+            <assign variable="width" expression="10"/>
+            <comment text="Poodejdu ze za&#269;&#225;tku"/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="width" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <comment text="kope&#269;ek 1"/>
+            <forward expression="n1 * CONST" pen="down"/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="width" pen="down"/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="n1 * CONST" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="width" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <comment text="kope&#269;ek 2"/>
+            <forward expression="n2 * CONST" pen="down"/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="width" pen="down"/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="n2 * CONST" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="width" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <comment text="kope&#269;ek 3"/>
+            <forward expression="n3 * CONST" pen="down"/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="width" pen="down"/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="n3 * CONST" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="width" pen="down"/>
+            <comment text="&#269;&#225;ra dole"/>
+            <turn expression="180" rotate="left"/>
+            <forward expression="width * 7" pen="down"/>
+            <comment text="posko&#269;it nahoru na pr&#367;m&#283;rovou &#269;&#225;ru"/>
+            <home/>
+            <forward expression="avg * CONST" pen="up"/>
+            <comment text="pr&#367;m&#283;r"/>
+            <turn expression="90" rotate="right"/>
+            <pen color="red"/>
+            <forward expression="width * 7" pen="down"/>
+            <comment text="n&#225;vrat dom&#367;"/>
+            <home/>
+        </body>
+    </function>
+</flowgorithm>

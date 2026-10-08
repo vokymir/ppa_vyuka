@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ctverec"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-30 04:21:48 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMDktMzA7MDQ6MTE6MTggb2RwLjsyNzk2"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMDktMzA7MDQ6MjE6NDggb2RwLjsxOzI5MDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="strana" type="Real" array="False" size=""/>
+            <declare name="uhlopricka" type="Real" array="False" size=""/>
+            <input variable="strana"/>
+            <assign variable="uhlopricka" expression="strana * sqrt(2)"/>
+            <output expression="&quot;Ctverec o strane &quot; &amp; strana &amp; &quot; ma uhlopricku delky &quot; &amp; ToFixed(uhlopricka, 3) &amp;&quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="kladne_cislo"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-07 04:38:16 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDc7MDQ6MzM6NDEgb2RwLjsyNzky"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDc7MDQ6Mzg6MTYgb2RwLjsxOzI5MDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cislo" type="Real" array="False" size=""/>
+            <input variable="cislo"/>
+            <if expression="cislo &gt;= 0">
+                <then>
+                    <output expression="&quot;to je kladne&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;je to zaporne&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

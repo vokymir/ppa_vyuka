@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="prumer_3"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-01 03:45:17 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDE7MDM6MjM6NDUgb2RwLjsyNzg4"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDE7MDM6NDU6MTcgb2RwLjsxOzI4OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, avg" type="Real" array="False" size=""/>
+            <input variable="n1"/>
+            <input variable="n2"/>
+            <input variable="n3"/>
+            <assign variable="avg" expression="(n1+n2+n3)/3"/>
+            <output expression="&quot;Prumer techto cisel je &quot; &amp; ToFixed(avg, 2)" newline="True"/>
+            <declare name="CONST, COLWIDTH" type="Integer" array="False" size=""/>
+            <assign variable="CONST" expression="10"/>
+            <assign variable="COLWIDTH" expression="20"/>
+            <home/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="COLWIDTH * 7" pen="down"/>
+            <home/>
+            <turn expression="90" rotate="right"/>
+            <comment text="sloupecek 1"/>
+            <forward expression="COLWIDTH" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="n1 * CONST" pen="down"/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="COLWIDTH" pen="down"/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="n1 * CONST" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <comment text="sloupecek 2"/>
+            <forward expression="COLWIDTH" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="n2 * CONST" pen="down"/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="COLWIDTH" pen="down"/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="n2 * CONST" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <comment text="sloupecek 3"/>
+            <forward expression="COLWIDTH" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <forward expression="n3 * CONST" pen="down"/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="COLWIDTH" pen="down"/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="n3 * CONST" pen="down"/>
+            <turn expression="90" rotate="left"/>
+            <home/>
+            <forward expression="avg * CONST" pen="up"/>
+            <turn expression="90" rotate="right"/>
+            <pen color="red"/>
+            <forward expression="7 * COLWIDTH" pen="down"/>
+            <home/>
+        </body>
+    </function>
+</flowgorithm>

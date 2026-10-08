@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="secti_sekundy"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-01 03:58:26 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDE7MDM6NDk6NDggb2RwLjsyNzk5"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDE7MDM6NTg6MjYgb2RwLjsxOzI5MDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="minuty, sekundy, celkemsekund" type="Integer" array="False" size=""/>
+            <input variable="minuty"/>
+            <input variable="sekundy"/>
+            <assign variable="celkemsekund" expression="sekundy + minuty * 60"/>
+            <output expression="&quot;toto je dohromady &quot; &amp; celkemsekund &amp; &quot; sekund&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

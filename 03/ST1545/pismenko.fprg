@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="pismenko"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-07 05:19:00 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDc7MDU6MTQ6MDQgb2RwLjsyNzkx"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMDc7MDU6MTk6MDAgb2RwLjsxOzI5MDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pismenko" type="String" array="False" size=""/>
+            <input variable="pismenko"/>
+            <if expression="(&quot;a&quot; &lt;= pismenko &amp;&amp; pismenko &lt;= &quot;z&quot;)&#13;&#10;||&#13;&#10;(&quot;A&quot; &lt;= pismenko &amp;&amp; pismenko &lt;= &quot;Z&quot;)">
+                <then>
+                    <output expression="&quot;je to pismenko&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;neni to pismenko&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

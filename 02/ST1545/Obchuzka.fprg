@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Obchuzka"/>
+        <attribute name="authors" value="kasakj"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-30 05:19:02 odp."/>
+        <attribute name="created" value="a2FzYWtqO1VDMzExUDA1LUtJVjsyMDI2LTA5LTMwOzAzOjMwOjMwIG9kcC47Mjg3Nw=="/>
+        <attribute name="edited" value="a2FzYWtqO1VDMzExUDA1LUtJVjsyMDI2LTA5LTMwOzA1OjAyOjE5IG9kcC47MjsyOTk0"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMDktMzA7MDU6MTk6MDIgb2RwLjsxOzI5MDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="posA" type="Real" array="False" size=""/>
+            <declare name="posB" type="Real" array="False" size=""/>
+            <declare name="length" type="Real" array="False" size=""/>
+            <declare name="rot" type="Real" array="False" size=""/>
+            <declare name="rad" type="Real" array="False" size=""/>
+            <input variable="posA"/>
+            <input variable="posB"/>
+            <input variable="length"/>
+            <input variable="rot"/>
+            <assign variable="rad" expression="rot*(3.14159265359/180)"/>
+            <output expression="&quot;polygon((&quot; &amp; ToFixed((posA),2) &amp; &quot;,&quot; &amp; ToFixed((posB),2) &amp; &quot;),(&quot; &amp; ToFixed((posA + length*Cos(rad)),2) &amp; &quot;,&quot; &amp; ToFixed((posB + length*Sin(rad)),2) &amp; &quot;),(&quot; &amp; ToFixed((posA + length*(Cos(rad)-Sin(rad))),2) &amp; &quot;,&quot; &amp; ToFixed((posB + length*(Sin(rad)+Cos(rad))),2) &amp; &quot;),(&quot; &amp; ToFixed((posA-length*Sin(rad)),2) &amp; &quot;,&quot; &amp; ToFixed((posB + length*Cos(rad)),2) &amp; &quot;))&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
