@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="vsp"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-22 03:36:13 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMjI7MDM6Mjc6MjEgb2RwLjsyNzg5"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMjI7MDM6MzY6MTMgb2RwLjsxOzI4OTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sum, count, value, weight" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="count" expression="0"/>
+            <input variable="value"/>
+            <while expression="value != 0">
+                <input variable="weight"/>
+                <assign variable="sum" expression="sum + value * weight"/>
+                <assign variable="count" expression="count + weight"/>
+                <input variable="value"/>
+            </while>
+            <output expression="sum / count" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

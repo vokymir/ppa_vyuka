@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tri"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-22 04:29:56 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMjI7MDM6NTc6NTMgb2RwLjsyNzk3"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMjI7MDM6NTg6MDggb2RwLjsxO2phdm9rO1VDMzExUDE3LUtJVjsyMDI2LTEwLTIyOzAzOjM3OjQyIG9kcC47bWF0LmZwcmc7NjYxNg=="/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMjI7MDQ6Mjk6NTYgb2RwLjsyOzI5MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="rank" type="Integer" array="False" size=""/>
+            <input variable="rank"/>
+            <output expression="&quot;&quot;" newline="True"/>
+            <call expression="Ctverec(rank)"/>
+            <output expression="&quot;&quot;" newline="True"/>
+            <call expression="TrojuhelnikLD(rank)"/>
+            <output expression="&quot;&quot;" newline="True"/>
+            <call expression="TrojuhelnikLU(rank)"/>
+            <output expression="&quot;&quot;" newline="True"/>
+            <call expression="TrojuhelnikRD(rank)"/>
+            <output expression="&quot;&quot;" newline="True"/>
+            <call expression="TrojuhelnikRU(rank)"/>
+            <output expression="&quot;&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="Ctverec" type="None" variable="">
+        <parameters>
+            <parameter name="rank" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <for variable="y" start="1" end="rank" direction="inc" step="1">
+                <for variable="x" start="1" end="rank" direction="inc" step="1">
+                    <output expression="&quot;X&quot;" newline="False"/>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="TrojuhelnikLD" type="None" variable="">
+        <parameters>
+            <parameter name="rank" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <for variable="y" start="1" end="rank" direction="inc" step="1">
+                <for variable="x" start="1" end="y" direction="inc" step="1">
+                    <output expression="&quot;X&quot;" newline="False"/>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="TrojuhelnikLU" type="None" variable="">
+        <parameters>
+            <parameter name="rank" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <for variable="y" start="1" end="rank" direction="inc" step="1">
+                <for variable="x" start="1" end="rank - y + 1" direction="inc" step="1">
+                    <output expression="&quot;X&quot;" newline="False"/>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="TrojuhelnikRD" type="None" variable="">
+        <parameters>
+            <parameter name="rank" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <for variable="y" start="1" end="rank" direction="inc" step="1">
+                <for variable="x" start="1" end="rank" direction="inc" step="1">
+                    <if expression="x &gt;= rank - y + 1">
+                        <then>
+                            <output expression="&quot;X&quot;" newline="False"/>
+                        </then>
+                        <else>
+                            <output expression="&quot; &quot;" newline="False"/>
+                        </else>
+                    </if>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="TrojuhelnikRU" type="None" variable="">
+        <parameters>
+            <parameter name="rank" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <for variable="y" start="1" end="rank" direction="inc" step="1">
+                <for variable="x" start="1" end="rank" direction="inc" step="1">
+                    <if expression="x &gt;= y">
+                        <then>
+                            <output expression="&quot;X&quot;" newline="False"/>
+                        </then>
+                        <else>
+                            <output expression="&quot; &quot;" newline="False"/>
+                        </else>
+                    </if>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

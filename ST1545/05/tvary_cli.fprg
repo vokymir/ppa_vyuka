@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tvary_cli"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-21 04:56:28 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMjE7MDQ6NDQ6MTkgb2RwLjsyNzk1"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMjE7MDQ6NTY6Mjggb2RwLjsyOzI5MDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r" type="Integer" array="False" size=""/>
+            <do expression="r != 0">
+                <input variable="r"/>
+                <if expression="r &gt; 0">
+                    <then>
+                        <call expression="Ctverec(r)"/>
+                        <call expression="TrojLD(r)"/>
+                        <call expression="TrojRU(r)"/>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+        </body>
+    </function>
+    <function name="Ctverec" type="None" variable="">
+        <parameters>
+            <parameter name="rank" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <for variable="y" start="1" end="rank" direction="inc" step="1">
+                <for variable="x" start="1" end="rank" direction="inc" step="1">
+                    <output expression="&quot;X&quot;" newline="False"/>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="TrojLD" type="None" variable="">
+        <parameters>
+            <parameter name="rank" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <for variable="y" start="1" end="rank" direction="inc" step="1">
+                <for variable="x" start="1" end="y" direction="inc" step="1">
+                    <output expression="&quot;X&quot;" newline="False"/>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="TrojRU" type="None" variable="">
+        <parameters>
+            <parameter name="rank" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="x, y" type="Integer" array="False" size=""/>
+            <for variable="y" start="1" end="rank" direction="inc" step="1">
+                <for variable="x" start="1" end="rank" direction="inc" step="1">
+                    <if expression="y &gt; x">
+                        <then>
+                            <output expression="&quot; &quot;" newline="False"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;X&quot;" newline="False"/>
+                        </else>
+                    </if>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

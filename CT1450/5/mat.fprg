@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="mat"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-22 03:56:50 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMjI7MDM6Mzc6NDIgb2RwLjsyNzkz"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMjI7MDM6NTY6NTAgb2RwLjsxOzI5MDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, j, rank" type="Integer" array="False" size=""/>
+            <input variable="rank"/>
+            <for variable="i" start="1" end="rank" direction="inc" step="1">
+                <for variable="j" start="1" end="rank" direction="inc" step="1">
+                    <if expression="(i == rank - j + 1)&#13;&#10; || &#13;&#10;(i == j)&#13;&#10; || &#13;&#10;(i == int(rank / 2) + 1)&#13;&#10; || &#13;&#10;(j == int(rank / 2) + 1)">
+                        <then>
+                            <if expression="i == rank - j + 1 &amp;&amp; i == j">
+                                <then>
+                                    <output expression="&quot;2 &quot;" newline="False"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;1 &quot;" newline="False"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;0 &quot;" newline="False"/>
+                        </else>
+                    </if>
+                </for>
+                <output expression="&quot;&quot;" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

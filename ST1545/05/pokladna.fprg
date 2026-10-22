@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="pokladna"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-21 04:20:26 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMjE7MDQ6MTU6NTMgb2RwLjsyNzkx"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMjE7MDQ6MjA6MjYgb2RwLjsxOzI4OTU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sum, val" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <do expression="val != 0">
+                <input variable="val"/>
+                <if expression="val &gt; 0">
+                    <then>
+                        <assign variable="sum" expression="sum + val"/>
+                    </then>
+                    <else/>
+                </if>
+            </do>
+            <output expression="sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="prumer"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-21 04:30:01 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMjE7MDQ6MjE6MjMgb2RwLjsyNzg1"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMjE7MDQ6MzA6MDEgb2RwLjsyOzI4OTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sum, count, val, wei" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="count" expression="0"/>
+            <input variable="val"/>
+            <while expression="val != 0">
+                <input variable="wei"/>
+                <assign variable="sum" expression="sum + val * wei"/>
+                <assign variable="count" expression="count + wei"/>
+                <input variable="val"/>
+            </while>
+            <output expression="sum/count" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
