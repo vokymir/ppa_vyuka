@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="arr"/>
+        <attribute name="authors" value="javok"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-29 05:00:28 odp."/>
+        <attribute name="created" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMjk7MDM6MzE6MDUgb2RwLjsyNzkz"/>
+        <attribute name="edited" value="amF2b2s7VUMzMTFQMTctS0lWOzIwMjYtMTAtMjk7MDU6MDA6Mjggb2RwLjsxOzI5MDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pole" type="Integer" array="True" size="5"/>
+            <assign variable="pole[4]" expression="1"/>
+            <call expression="ReadArray(pole)"/>
+            <call expression="PrintArray(pole)"/>
+            <output expression="FindMax(pole)" newline="True"/>
+        </body>
+    </function>
+    <function name="FindMax" type="Integer" variable="index">
+        <parameters>
+            <parameter name="arr" type="Integer" array="True"/>
+        </parameters>
+        <body>
+            <declare name="i, max, index" type="Integer" array="False" size=""/>
+            <assign variable="max" expression="arr[0]"/>
+            <assign variable="index" expression="0"/>
+            <for variable="i" start="0" end="size(arr) - 1" direction="inc" step="1">
+                <if expression="max &lt; arr[i]">
+                    <then>
+                        <assign variable="max" expression="arr[i]"/>
+                        <assign variable="index" expression="i"/>
+                        <breakpoint expression="" always="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+    <function name="PrintArray" type="None" variable="">
+        <parameters>
+            <parameter name="arr" type="Integer" array="True"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;[&quot;" newline="False"/>
+            <for variable="i" start="0" end="size(arr) - 2" direction="inc" step="1">
+                <output expression="arr[i] &amp; &quot;, &quot;" newline="False"/>
+            </for>
+            <output expression="arr[size(arr) - 1]" newline="False"/>
+            <output expression="&quot;]&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="ReadArray" type="None" variable="">
+        <parameters>
+            <parameter name="arr" type="Integer" array="True"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="size(arr) - 1" direction="inc" step="1">
+                <input variable="arr[i]"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
